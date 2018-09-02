@@ -1,5 +1,0 @@
-dependencies {
-    compile project(":components:rest-support")
-
-    testCompile project(":components:test-support")
-}
