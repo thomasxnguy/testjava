@@ -3,7 +3,7 @@ Spring Cloud Course Summary
 This project is a compilation of all the spring-cloud components used during certification training.
 
 
-#Registration Server
+### Registration Server
 Sample registration endpoint
 
 Run on ``http://localhost:8083`` 
@@ -11,7 +11,7 @@ Run on ``http://localhost:8083``
 - Actuator metric: ```/metrics``` (JVM..)
 - Hystric stream: ``/hystrix.stream`` (Continuous ping)
 
-#Timesheets Server
+### Timesheets Server
 Run on ``http://localhost:8084 ``
 - healthcheck : ```/health```
 - Actuator metric: ```/metrics (JVM..)```
@@ -23,7 +23,7 @@ Run on ``http://localhost:8084 ``
 curl -i -XPOST -H"Content-Type: application/json" localhost:8084/time-entries/ -d"{\"projectId\": 1, \"userId\": 1, \"date\": \"2015-05-17\", \"hours\": 6}"
 ````
 
-#Eureka Server
+### Eureka Server
 For Service Registry and Discovery :
 
 Run on 
@@ -37,7 +37,7 @@ Stats dashboard run on
 ````
 http://localhost:8085
 ````
-#Turbine-Server 
+### Turbine-Server 
 For Hystrix stats aggregation :
 
 Use streaming protocole ans queue
@@ -52,7 +52,7 @@ Run rabbitMQ using etc/docker/docker-compose.yml
 Access rabbitMQ dashboard on : localhost:15672
 Change annotation from @EnableTurbine to @EnableTurbineStream
 
-#Config-server
+### Config-server
 For managing configuration file through git-repository
 
 Run on 
@@ -84,7 +84,7 @@ Secret File can be stored using vault :
 Vault project web site : https://www.vaultproject.io/
 
 
-## Oauth2 Server
+### Oauth2 Server
 
 Run on 8080
 
